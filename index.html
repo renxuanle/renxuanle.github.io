@@ -108,32 +108,32 @@
 
 <h2>Projects</h2>
 <ol>
-<li><p>Advertising Platform Development, 01.2022-Present</p></li>
+<li><p>Homomorphic Database, 2021.9-2022.10</p></li>
 <ul>
-<li><p>Provide advertising strategies and solutions for advertisers to maximize revenue</p>
-</li>
-<li><p>Provide automated advertising instead of manual selection</p>
-</li>
-<li><p>Use users' history information to build their profiles, and then select the target users</p>
-</li>
+  <li><p>Privacy of outsourced database and subsequent queries should be preserved, such that the cloud provider can neither reverse the database nor the user queries. In this work, we aim to preserve the privacy of database and queries using fully homomorphic encryption (FHE), where both storage and computation are based on ciphertext rather than plaintext.</p></li>
 </ul>
-<li><p>Campus Recommender System, 03.2021-12.2021</p></li>
+<li><p>Hardware Acceleration for Homomorphic Encryption, 2020.5–2022.12</p></li>
 <ul>
-<li><p>Built user profiles based on the data crawled from websites</p>
-</li>
-<li><p>Recommended information, such as courses from MOOC, and publications from Arxiv, to students</p>
-</li>
-<li><p>Recommended information from within and outside the university based on faculty research, courses taught, and interests</p>
-</li>
+  <li><p>Homomorphic Encryption (HE) is a privacy-preserving method that can do computation on encrypted data rather than plaintext. HE computation is commonly 1,000 to 1,000,000 more intensive than computation on plaintext, thus limiting its wide application. In this work, we designed a hardware accelerator supporting FHE computations, and implemented the accelerator using Xilinx FPGA U280. To enable simulation/emulation, we also developed software stack (driver and runtime). The FPGA demonstrates acceleration of neural network inference by more than 200 times. The hardware/software system has been integrated into Alibaba Ant-Chain All-in-One Machine.</p></li>
 </ul>
-<li><p>Online Education Explainable Recommender System, NSFC, 06.2018-12.2018</p></li>
+<li><p>Trusted AI Accelerators, 2019.5–2019.11</p></li>
 <ul>
-<li><p>Summarized over 500,000 exercises and classified their knowledge points from all subjects</p>
-</li>
-<li><p>Applied matrix factorization for online learning and recommendation of exercises based on interaction of users</p>
-</li>
-<li><p>Added latent features learned by neural networks from exercises to online matrix factorization for better performance</p>
-</li>
+  <li><p>TEE, such as Intel SGX, enables trusted computation within CPUs. However, due to limited memory space and computing power, TEE is not suitable for AI applications which usually involve intensive computations. In this work, we propose to extend the trusted boundary from CPU to AI accelerator, such that both privacy and high performance can be achieved. This extension causes 0.9% to 30% hardware overhead.</p></li>
+</ul>
+<li><p>RISC-V TEE Design, 2019.8-2020.3</p></li>
+<ul>
+  <li><p>We designed a light-weight TEE architecture for RISC-V. In addition, Direct-Memory-Access (DMA) is utilized to accelerate data transfer between isolated data enclaves. Compared to existing solutions (e.g., ARM TrustZone), our solution achieves better usability without compromising security.</p></li>
+</ul>
+<li><p>IC Intrusion detection Using On-chip Learning, 2013.10-2017.12</p></li>
+<ul>
+  <li><p>JTAG, the testing interface for IC, is primarily used for manufacturing test, but also
+    used for in-field debug. Hence, JTAG needs to be left intact after manufacturing test,
+    thus providing a backdoor that can be exploited by illegitimate user. Attackers have
+    demonstrated their capability of reverse engineering the system design and dumping
+    credential on-chip data. We improve JTAG security via monitoring real-time JTAG
+    operation, analyzing user behavior using machine learning algorithm, and encrypting the
+    JTAG if a potential attacker is detected. The proposed machine learning detectors are
+    further implemented in Xilinx Zynq7000 ZC706 FPGA.</p></li>
 </ul>
 </ol>
 
