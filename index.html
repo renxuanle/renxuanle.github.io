@@ -108,23 +108,44 @@
 
 <h2>Projects</h2>
 <ol>
-<li><p>Homomorphic Database, 2021.9-2022.10</p></li>
+<li><p>Homomorphic Database, Alibaba Group, 2021.9-2022.10</p></li>
 <ul>
-  <li><p>Privacy of outsourced database and subsequent queries should be preserved, such that the cloud provider can neither reverse the database nor the user queries. In this work, we aim to preserve the privacy of database and queries using fully homomorphic encryption (FHE), where both storage and computation are based on ciphertext rather than plaintext.</p></li>
+  <li><p>Privacy of outsourced database and subsequent queries should be preserved, such that
+    the cloud provider can neither reverse the database nor the user queries. In this work, we
+    aim to preserve the privacy of database and queries using fully homomorphic encryption
+    (FHE), where both storage and computation are based on ciphertext rather than plaintext. 
+    This work has been published in VLDB'2022 [<a href="https://dl.acm.org/doi/10.14778/3574245.3574248">link</a>].</p></li>
 </ul>
-<li><p>Hardware Acceleration for Homomorphic Encryption, 2020.5–2022.12</p></li>
+<li><p>Hardware Acceleration for Homomorphic Encryption, Alibaba Group, 2020.5–2022.12</p></li>
 <ul>
-  <li><p>Homomorphic Encryption (HE) is a privacy-preserving method that can do computation on encrypted data rather than plaintext. HE computation is commonly 1,000 to 1,000,000 more intensive than computation on plaintext, thus limiting its wide application. In this work, we designed a hardware accelerator supporting FHE computations, and implemented the accelerator using Xilinx FPGA U280. To enable simulation/emulation, we also developed software stack (driver and runtime). The FPGA demonstrates acceleration of neural network inference by more than 200 times. The hardware/software system has been integrated into Alibaba Ant-Chain All-in-One Machine.</p></li>
+  <li><p>Homomorphic Encryption (HE) is a privacy-preserving method that can do computation
+    on encrypted data rather than plaintext. HE computation is commonly 1,000 to 1,000,000
+    more intensive than computation on plaintext, thus limiting its wide application. In
+    this work, we designed a hardware accelerator supporting FHE computations, and
+    implemented the accelerator using Xilinx FPGA U280. To enable simulation/emulation,
+    we also developed software stack (driver and runtime). The FPGA demonstrates
+    acceleration of neural network inference by more than 200 times. The hardware/software
+    system has been integrated into Alibaba Ant-Chain All-in-One Machine. This work has been
+    published in DAC'2023 [<a href="https://ieeexplore.ieee.org/document/10247696/">link</a>].</p></li>
 </ul>
-<li><p>Trusted AI Accelerators, 2019.5–2019.11</p></li>
+<li><p>Trusted AI Accelerators, Alibaba Group, 2019.5–2019.11</p></li>
 <ul>
-  <li><p>TEE, such as Intel SGX, enables trusted computation within CPUs. However, due to limited memory space and computing power, TEE is not suitable for AI applications which usually involve intensive computations. In this work, we propose to extend the trusted boundary from CPU to AI accelerator, such that both privacy and high performance can be achieved. This extension causes 0.9% to 30% hardware overhead.</p></li>
+  <li><p>TEE, such as Intel SGX, enables trusted computation within CPUs. However, due to
+    limited memory space and computing power, TEE is not suitable for AI applications which
+    usually involve intensive computations. In this work, we propose to extend the trusted
+    boundary from CPU to AI accelerator, such that both privacy and high performance can
+    be achieved. This extension causes 0.9% to 30% hardware overhead. A paper titled
+    Customizing Trusted AI Accelerators for Efficient Privacy-Preserving Machine Learning
+    was reported [<a href="https://arxiv.org/abs/2011.06376">link</a>].</p></li>
 </ul>
-<li><p>RISC-V TEE Design, 2019.8-2020.3</p></li>
+<li><p>RISC-V TEE Design, Alibaba Group, 2019.8-2020.3</p></li>
 <ul>
-  <li><p>We designed a light-weight TEE architecture for RISC-V. In addition, Direct-Memory-Access (DMA) is utilized to accelerate data transfer between isolated data enclaves. Compared to existing solutions (e.g., ARM TrustZone), our solution achieves better usability without compromising security.</p></li>
+  <li><p>We designed a light-weight TEE architecture for RISC-V. In addition, Direct-Memory-
+    Access (DMA) is utilized to accelerate data transfer between isolated data enclaves.
+    Compared to existing solutions (e.g., ARM TrustZone), our solution achieves better
+    usability without compromising security [<a href="https://arxiv.org/abs/2208.03631">link</a>].</p></li>
 </ul>
-<li><p>IC Intrusion detection Using On-chip Learning, 2013.10-2017.12</p></li>
+<li><p>IC Intrusion detection Using On-chip Learning, Carnegie Mellon University, 2013.10-2017.12</p></li>
 <ul>
   <li><p>JTAG, the testing interface for IC, is primarily used for manufacturing test, but also
     used for in-field debug. Hence, JTAG needs to be left intact after manufacturing test,
@@ -133,7 +154,24 @@
     credential on-chip data. We improve JTAG security via monitoring real-time JTAG
     operation, analyzing user behavior using machine learning algorithm, and encrypting the
     JTAG if a potential attacker is detected. The proposed machine learning detectors are
-    further implemented in Xilinx Zynq7000 ZC706 FPGA.</p></li>
+    further implemented in Xilinx Zynq7000 ZC706 FPGA. This work has been published in 
+    DATE'2015 [<a href="https://ieeexplore.ieee.org/document/7092367">link</a>],
+    ISVLSI'2016 [<a href="https://ieeexplore.ieee.org/document/7560255">link</a>], 
+    ETS'2018 [<a href="https://ieeexplore.ieee.org/document/8400684">link</a>], and
+    TCAD'2019 [<a href="https://ieeexplore.ieee.org/document/8281506/">link</a>].</p></li>
+</ul>
+<li><p>C Test and Diagnosis Using Machine Learning, Carnegie Mellon University, 2012.9-2013.9</p></li>
+<ul>
+  <li><p>Ensuring lifetime reliability of integrated systems has become a central concern. Although
+    manufacturing tests are performed to help ensure reliability, a chip may still degrade
+    and even fail in the field due to early-life failure and wear-out (also named aging). We
+    proposed to implement on-chip test and diagnosis functionality to ICs, and test the
+    chip periodically. Hence, any potential fault can be detected before fatal consequence
+    occurs. To improve diagnosis accuracy in real-time, we developed a dynamic machine
+    learning algorithm, named dynamic k-nearest-neighbor (k-NN), which can adapt to the
+    test results in real-time. The dynamic k-NN is also implemented in Xilinx Zynq7000
+    ZC706 FPGA. This work has been published in 
+    VTS'2015 [<a href="https://ieeexplore.ieee.org/document/7116280">link</a>].</p></li>
 </ul>
 </ol>
 
