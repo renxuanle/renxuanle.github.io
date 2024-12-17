@@ -8,7 +8,7 @@ table#tlayout {
 
 body {
 	background: white;
-	font-family: Verdana, sans-serif;
+	font-family: 'Times New Roman', sans-serif;
 	padding-bottom: 8px;
 	margin: 0;
 }
@@ -19,7 +19,7 @@ body {
 	padding-top: 0.5em;
 	padding-left: 8px;
 	padding-right: 8px;
-	font-size: 1.0em;
+	font-size: 1em;
 	width: auto;
 	white-space: nowrap;
     text-align: left;
@@ -65,11 +65,11 @@ a:hover {
 }
 
 #layout-menu a.current:link, #layout-menu a.current:visited {
-	color: #022b6d;
+	color: #5c5a5a;
 	border-bottom: 1px gray solid;
 }
 #layout-menu a:link, #layout-menu a:visited, #layout-menu a:hover {
-	color: #527bbd;
+	color: #5c5a5a;
 	text-decoration: none;
 }
 #layout-menu a:hover {
@@ -117,7 +117,7 @@ strong {
 
 
 h1, h2, h3 {
-	color: #527bbd;
+	color: #357ae8;
 	margin-top: 0.7em;
 	margin-bottom: 0.3em;
 	padding-bottom: 0.2em;
@@ -364,4 +364,88 @@ img {
 table.imgtable, table.imgtable td {
     border: none;
     text-align: left;
+}
+
+
+/* ***************** */
+/* News Block        */
+/* ***************** */
+
+.news-block {
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    padding: 10px 0px;
+    margin: 5px 0px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* .news-block h2 {
+    margin-bottom: 15px;
+    font-size: 1.5rem;
+    color: #333;
+}
+
+.news-block ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.news-block li {
+    margin-bottom: 10px;
+    font-size: 1rem;
+    line-height: 1;
+    color: #555;
+} */
+
+
+/* ***************** */
+/* Research          */
+/* ***************** */
+
+/* Parent container */
+.design-display {
+    display: flex; /* Use Flexbox */
+    align-items: flex-start; /* Align items at the top */
+    gap: 20px; /* Space between the figure and the text */
+    margin: 20px 0;
+}
+
+/* Styling the figure with a fixed width */
+.design-display figure {
+    margin: 0;
+    width: 300px; /* Fixed width for the image container */
+    text-align: center; /* Center the image and caption */
+}
+
+.design-display img {
+    width: 100%; /* Responsive within its container */
+    height: auto; /* Maintain aspect ratio */
+    border-radius: 8px; /* Optional: Rounded corners */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Optional shadow */
+}
+
+.design-display figcaption {
+    font-size: 0.9rem;
+    color: #555;
+    margin-top: 8px;
+}
+
+/* Styling the text */
+.design-display .design-text {
+    flex-grow: 1; /* Allow the text div to take up available space */
+    max-width: 600px; /* Optional: Limit the maximum width */
+    text-align: left; /* Align all text to the left */
+}
+
+.design-display .design-text h3 {
+    font-size: 100%;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.design-display .design-text p {
+    line-height: 1.2em;
+    color: #555;
+    margin: 0;
 }
